@@ -51,6 +51,78 @@
 
 /* test comment for git to wpengine staging site */
 
+/* Case studies styles */
+
+aside.case-study-sidebar {
+	float: left;
+	width: 285px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 30px 35px 0px 30px;
+}
+
+aside.case-study-sidebar h2 {
+	color: #383838;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+aside.case-study-sidebar h5 {
+    color: #CDCDCD;
+    font-weight: 400;
+    font-size: smaller;
+    margin-top: 15px;
+}
+aside.case-study-sidebar h6 {
+	font-size: 16px;
+    margin-top: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+aside.case-study-sidebar p {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color: #808080;	
+}
+
+aside.case-study-sidebar p.visit {
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #383838;	
+}
+
+
+div.case-study-images {
+	float: left;
+	width: 600px;
+	display: block;
+	margin-top: 30px;
+}
+
+
+div.case-study-images img {
+	margin-bottom: 60px;
+}
+
+/* Featured Work styles */
+
+section.featured-work h4 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+section.featured-work figure {
+	display: table;
+	float: left;
+	margin: 0 10px 150px;
+}
+section.featured-work figcaption {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: #383838;
+	text-align: center;
+	margin-top: 20px;
+}
 
 
 

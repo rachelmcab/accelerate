@@ -22,7 +22,9 @@ get_header(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
+
 	</div><!-- .container -->
 </section><!-- .home-page -->
+
 
 <?php get_footer(); ?>
