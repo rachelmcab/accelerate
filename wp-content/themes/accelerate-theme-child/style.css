@@ -124,8 +124,47 @@ section.featured-work figcaption {
 	margin-top: 20px;
 }
 
+/* Contact Form styles */
 
+#primary.site-content {
+	font-family: 'Open Sans', sans-serif;
+}
 
+#nf-form-1-cont {
+	font-size: 14px;
+}
+
+.site-content h2 {
+	margin-left: 150px;
+}
+
+.site-content p {
+	color: #8d8d8d;
+}
+
+#content {
+	margin: 0px 150px;
+}
+
+.nf-field-container.textbox-container.label-above, .nf-field-container.email-container.label-above  {
+	width: 49%;
+	float: left;
+	clear: initial;
+}
+
+.nf-field-container.email-container.label-above {
+	margin-left: 10px;
+}
+
+#nf-field-4 {
+	float: right;
+    width: 175px;
+    padding: 15px 10px;
+    background-color: #45ac9d;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
 
 
 
