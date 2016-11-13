@@ -21,6 +21,14 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#primary-navigation.site-navigation.primary-navigation ul li {
+	display: inline;
+	padding: 14px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 200;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -30,8 +38,8 @@
 }
 
 .blog-post h4 {
-	font-size: 16px;
 	font-family: 'Montserrat';
+	font-size: 16px;
 	color: #a6a6a6;
 	text-transform: uppercase;
 }
@@ -49,7 +57,28 @@
 	text-transform: uppercase;
 }
 
-/* test comment for git to wpengine staging site */
+/* Featured Work styles */
+
+.featured-work h4 {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.featured-work figure {
+	display: table;
+	float: left;
+	margin: 0 10px 150px;
+}
+.featured-work figcaption {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #383838;
+	text-align: center;
+	margin-top: 20px;
+}
 
 /* Case studies styles */
 
@@ -102,49 +131,25 @@ div.case-study-images {
 div.case-study-images img {
 	margin-bottom: 60px;
 }
-
-/* Featured Work styles */
-
-section.featured-work h4 {
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-section.featured-work figure {
-	display: table;
-	float: left;
-	margin: 0 10px 150px;
-}
-section.featured-work figcaption {
-	font-family: 'Open Sans';
-	font-weight: 400;
-	color: #383838;
-	text-align: center;
-	margin-top: 20px;
-}
-
 /* Contact Form styles */
 
-#primary.site-content {
+.contact-us-form {
 	font-family: 'Open Sans', sans-serif;
+	margin-left: 175px;
 }
 
 #nf-form-1-cont {
 	font-size: 14px;
 }
 
-.site-content h2 {
-	margin-left: 150px;
+.contact-us-form h2 {
+	font-family: 'Montserrat', sans-serif;
 }
 
-.site-content p {
+#content.contact-us-form p {
 	color: #8d8d8d;
 	font-size: 16px;
-}
-
-#content {
-	margin: 0px 150px;
+	margin: 0;
 }
 
 .nf-field-container.textbox-container.label-above, .nf-field-container.email-container.label-above  {
@@ -167,12 +172,132 @@ section.featured-work figcaption {
     font-size: 18px;
 }
 
+/* About Us styles */
 
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 150px;
+    margin: 0 0 0px;
+    padding: 80px 0;
+}
 
+.site-content {
+}
 
+.site-content p {
+	color: white;
+    font-size: 25px;
+    width: 600px;
+    margin: auto;
+}
 
+.site-content p strong {
+	color: #45ac9d;
+    font-size: 25px;
+    font-weight: 400;
+    width: 600px;
+    margin: auto;
+}
 
+/* Our Services */
+div.our-services-intro {
+	margin-top: 5px;
+	text-align: center;
+	padding: 40px;
+	font-weight: 500;
+}
 
+div.our-services-intro h4 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: auto;
+	padding-bottom: 20px;
 
+}
 
+div.our-services-intro p {
+	font-weight: 100;
+	font-size: 16px;
+	color: #383838;
+	margin-bottom: 24px;
+	margin: auto;    
+	width: 500px;
+}
+
+/* Services section */
+
+.service_posts {
+}
+.clearfix {
+	overflow: auto;
+}
+.one_post {
+	margin-bottom: 50px;
+}
+.service_posts h3 {
+	font-weight: 500;
+	font-size: 25px; 
+    margin-left: 67px;
+}
+
+.service_posts p {   
+	font-size: 18px;
+	color: #383838;
+}
+
+.services_image_Left  {
+	float: left;
+}
+.services_text_Left {
+	float: right;
+	width: 710px;
+}
+.services_text_Left h3 {
+	margin: 0;
+}
+.services_text_Left p {
+	width: inherit;
+
+}
+.services_image_Right {
+	float: right;
+}
+.services_text_Right {
+	float: left;
+	width: 730px;
+}
+.services_text_Right h3 {
+	margin: 0;
+}
+.services_text_Right p {
+	width: inherit;
+}
+
+/* Contact Us button */
+
+.about-contact-button {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: solid #c9c9c9 2px;
+	border-bottom: solid #c9c9c9 2px;
+	padding: 20px 0 40px 0;
+}
+
+.about-contact .site-content h2 {
+	float: left;
+	padding-right: 40px;
+}
+.about-contact .site-content a {
+	float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+.about-contact-link a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 

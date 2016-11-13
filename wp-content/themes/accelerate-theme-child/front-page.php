@@ -29,16 +29,16 @@ get_header(); ?>
 
 <section class="featured-work">
 	<div class="site-content">
+		<div class="featured-work">
 				<?php query_posts('post_type=case_studies&posts_per_page=3'); ?>
 					<?php while ( have_posts() ) : the_post(); 
 						$image_1 = get_field('image_1');
 						$size = "medium";
 						$link = get_field('site_link');
-						
 					?>
 					<h4>Featured Work</h4>
 
-					<a href="<?php echo $link; ?>">
+					<a href="<?php echo $link;mat ?>">
 					<figure> <?php if ($image_1) { echo wp_get_attachment_image( $image_1, $size ); } ?>
 					<figcaption><?php the_title(); ?></figcaption>
 					</figure>
@@ -56,7 +56,6 @@ get_header(); ?>
 					<?php endwhile; ?>
 				<?php wp_reset_query(); ?>	
 		</div>
-		
 	</div>
 </section>
 
@@ -69,13 +68,20 @@ get_header(); ?>
 				<?php query_posts('posts_per_page=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<h2><?php the_title(); ?></h2>
-						<?php the_excerpt(); ?>
+						<p><?php the_excerpt(); ?></p>
 						<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
 					<?php endwhile; ?>
-				<?php wp_reset_query(); ?>	
-		</div>
-		
+				<?php wp_reset_query(); ?>
+		</div>	
 	</div>
 </section>
+
+<!-- Twitter module -->
+
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>

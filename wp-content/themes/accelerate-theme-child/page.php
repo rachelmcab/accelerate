@@ -16,11 +16,10 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 
-		<h2><? the_title(); ?></h2>
-
-		<div id="content" role="main">
+		<div id="content" role="main" class="contact-us-form">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php the_content(); ?>
+				<h2><?php the_title(); ?></h2>
+				<p><?php the_content(); ?></p>
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->

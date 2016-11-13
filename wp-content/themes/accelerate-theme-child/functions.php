@@ -9,7 +9,7 @@
  * When using a child theme you can override certain functions (those wrapped
  * in a function_exists() call) by defining them first in your child theme's
  * functions.php file. The child theme's functions.php file is included before
- * the parent theme's file, so the child theme functions would be used.
+ * the parent theme's file, so the child theme functionsk would be used.
  *
  * @link http://codex.wordpress.org/Theme_Development
  * @link http://codex.wordpress.org/Child_Themes
@@ -37,7 +37,45 @@ function create_custom_post_types() {
 			'rewrite' => array ( 'slug' => 'case-studies' ),
 			)
 		);
-}
 
-add_action( 'init', 'create_custom_post_types');
+	register_post_type('services',
+		array (
+			'labels' => array (
+				'name' => __( 'Services' ),
+				'singular_name' => __ ( 'Service' ),
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array ( 'slug' => 'services' ),
+			)
+		); 
+} 
+
+add_action( 'init', 'create_custom_post_types' );
+
+//add_theme_support( 'post-thumbnails' ); 
+
+//add_action('init', 'my_custom_init');
+
+//function my_custom_init() {
+        //add_post_type_support( 'services', 'thumbnail' ); 
+    //}
+
+function accelerate_theme_child_widget_init() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h3 class="widget-title">',
+	    'after_title' => '</h3>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+
+
 
